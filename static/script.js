@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
        user_room = document.getElementById("user_room").value
        user_name = document.getElementById("user_name").value
        app.emit("join", {name: user_name, room: user_room})
+
     })
 
    app.addHandler("send", ()=> {
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    app.addHandler("back", ()=> {
         app.emit("leave")
+        app.store.messages = []
         app.go("selectroom")
    })
 
