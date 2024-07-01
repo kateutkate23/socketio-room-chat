@@ -1,0 +1,14 @@
+annotated-types==0.7.0
+bidict==0.23.1
+dnspython==2.6.1
+eventlet==0.36.1
+greenlet==3.0.3
+h11==0.14.0
+loguru==0.7.2
+pydantic==2.7.4
+pydantic-core==2.18.4
+python-engineio==4.9.1
+python-socketio==5.11.3
+simple-websocket==1.0.0
+typing-extensions==4.12.2
+wsproto==1.2.0
