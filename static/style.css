@@ -1,11 +1,11 @@
 /* RESETS */
 
 * {
-   box-sizing: border-box;
-   border: none;
-   background: none;
-   box-shadow: None;
-   font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    box-shadow: None;
+    font-size: 18px;
 }
 
 body {
@@ -24,11 +24,11 @@ select { border-right: 16px solid transparent;}
 }
 
 .row {
-  display: flex;
+    display: flex;
 }
 
 .grow {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .center {
@@ -41,7 +41,7 @@ select { border-right: 16px solid transparent;}
 }
 
 .mb {
-   margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* TYPOGRAPHY */
@@ -98,9 +98,9 @@ button {
 }
 
 .chat-messages {
-
-   min-height: 300px;
-
+    min-height: 300px;
+    max-height: 300px;
+    overflow: auto;
 }
 
 .form-button {

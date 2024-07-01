@@ -3,6 +3,9 @@ from eventlet import wsgi
 import socketio
 from loguru import logger
 
+from src.models.user import User
+from src.models.message import Message
+
 ROOMS = ["lobby", "general", "random"]
 
 # Заставляем работать пути к статике
@@ -17,22 +20,26 @@ def connect(sid, environ):
     logger.info(f"Пользователь {sid} подключился")
 
 
-# Обрабатываем запрос очерендного вопроса
+# Отправляем комнаты
 @sio.on('get_rooms')
 def on_get_rooms(sid, data):
-    pass
+    ...
 
 
-# Обрабатывем отправку ответа
-@sio.on('message')
-def on_message(sid, data):
-    pass
+@sio.on('join')
+def on_join(sid, data):
+    ...
 
 
-# Обрабатывем отправку ответа
 @sio.on('leave')
 def on_leave(sid, data):
-    pass
+    ...
+
+
+# Обрабатываем отправку ответа
+@sio.on('send_message')
+def on_message(sid, data):
+    ...
 
 
 # Обрабатываем отключение пользователя

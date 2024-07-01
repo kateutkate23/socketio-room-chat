@@ -8,26 +8,24 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="/static/lariska.js"></script>
     <script src="/static/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/style.css" />
-
-
+    <link rel="stylesheet" type="text/css" href="/static/style.css"/>
 </head>
 <body>
 
-    <main>
-        <div class="container">
-            <section class="screen active card" id="app">
-                Загружаем
-            </section>
-        </div>
-    </main>
+<main>
+    <div class="container">
+        <section class="screen active card" id="app">
+            Загружаем
+        </section>
+    </div>
+</main>
 
 <template id="selectroom">
     <h1>Демо чат</h1>
     <p>Выберите комнату</p>
     <select class="alert alert-info block" id="user_room" class="block">
         {{#each rooms}}
-            <option value="{{this}}">{{this}}</option>
+        <option value="{{this}}">{{this}}</option>
         {{/each}}
     </select>
     <p>Выберите имя</p>
@@ -41,22 +39,22 @@
 
     <div class="chat-messages">
         {{#each messages}}
-            <p>{{this.author}}: {{this.text}}</p>
+        <p>{{this.author}}: {{this.text}}</p>
         {{/each}}
     </div>
 
     <div class="message-form row">
         <input class="alert info grow" type="text" id="user_message" placeholder="Введите сообщение">
-        <button class="form-button" onclick="app.run('send')"> Отправить </button>
+        <button class="form-button" onclick="app.run('send')">Отправить</button>
     </div>
 </template>
 
-<template id="messages" class="subtemplate">
-     <div class="chat-messages">
+<template id="messages">
+    <div class="chat-messages">
         {{#each messages}}
-            <p>{{this.name}}: {{this.text}}</p>
+        <p>{{this.name}}: {{this.text}}</p>
         {{/each}}
-     </div>
+    </div>
 </template>
 
 <template id="disconnect">
