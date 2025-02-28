@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chat demo</title>
+    <title>Чат</title>
     <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="/static/lariska.js"></script>
     <script src="/static/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
 </main>
 
 <template id="selectroom">
-    <h1>Демо чат</h1>
+    <h1>Чат с комнатами</h1>
     <p>Выберите комнату</p>
     <select class="alert alert-info block" id="user_room" class="block">
         {{#each rooms}}
@@ -58,9 +59,7 @@
 </template>
 
 <template id="disconnect">
-
     <h1>Соединение с сервером потеряно, приложение пытается восстановить связь</h1>
-
 </template>
 
 </body>
