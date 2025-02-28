@@ -44,7 +44,7 @@ This project is based on a template from the course [Stepik: Writing WebSockets 
     
 5. **Open in your browser:**
     
-    - Visit `http://127.0.0.1:8000/` to start playing.
+    - Visit `http://127.0.0.1:8000/` to start chatting.
 
 ## Technologies Used
 
