@@ -1,4 +1,4 @@
-# Riddle Game (Socket.IO + Python)
+# Room Chat (Socket.IO + Python)
 
 This project is based on a template from the course [Stepik: Writing WebSockets in Python](https://stepik.org/course/195202/info). It is a simple real-time chat application built with Python and Socket.IO. In this project, I learned how to work with WebSockets, handle real-time communication, and manage room-based chat functionality.
 
@@ -16,8 +16,8 @@ This project is based on a template from the course [Stepik: Writing WebSockets 
 1. **Clone the repository:**
     
     ```sh
-    git clone https://github.com/kateutkate23/socketio_room_chat.git
-    cd socketio_room_chat
+    git clone https://github.com/kateutkate23/socketio-room-chat.git
+    cd socketio-room-chat
     ```
     
 2. **Create a virtual environment and activate it:**
